@@ -2,7 +2,7 @@
 
 ```bash
 git clone https://github.com/score-spec/examples
-cd samples/onlineboutique
+cd examples/samples/onlineboutique
 ```
 
 ```bash
