@@ -24,5 +24,8 @@ score-k8s generate \
     frontend/score.yaml \
     loadgenerator/score.yaml \
     --namespace onlineboutique \
-    --generate-namespace
+    --generate-namespace \
+    -o manifests.yaml
 ```
+
+And then you can apply the generated `manifests.yaml` to OpenChoreo.
