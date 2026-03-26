@@ -67,7 +67,11 @@
         {{- range $portName, $port := $service.ports }}
         {{ $portName }}:
           port: {{ $port.port }}
-          type: {{ $port.protocol | default "tcp" }}
+          {{ if eq $portName "grpc" }}
+          type: "gRPC"
+          {{ else }}
+          type: "HTTP"
+          {{ end }}  
         {{ end }}
       container:
         image: {{ $firstContainer.image }}
