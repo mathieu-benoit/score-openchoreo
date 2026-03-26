@@ -1,0 +1,7 @@
+- uri: template://openchoreo-provisioners/dns
+  type: dns
+  description: DNS for OpenChoreo.
+  outputs: |
+    host: ""
+  expected_outputs:
+    - host

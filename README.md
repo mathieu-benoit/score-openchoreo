@@ -9,6 +9,8 @@ You can also open the `.devcontainer` in your VS Code where `score-k8s` is alrea
 ```bash
 score-k8s init --no-sample \
     --patch-templates ./score-k8s/patchers/openchoreo.tpl \
+    --provisioners ./score-k8s/provisioners/dns.provisioners.yaml \
+    --provisioners ./score-k8s/provisioners/route.provisioners.yaml \
     --provisioners https://raw.githubusercontent.com/score-spec/community-provisioners/refs/heads/main/service/score-k8s/10-service.provisioners.yaml
 
 score-k8s generate \

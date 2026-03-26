@@ -1,0 +1,7 @@
+- uri: template://openchoreo-provisioners/route
+  type: route
+  description: Route for OpenChoreo.
+  supported_params:
+    - host
+    - port
+    - path
